@@ -1,4 +1,6 @@
 $(function() {
+    $(".top-line .sf-menu").superfish();
+
 
 	//SVG Fallback
 	if(!Modernizr.svg) {

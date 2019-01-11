@@ -18,6 +18,11 @@
     font-family: "RobotoCondensedRegual", sans-serif;
     font-size: 15px;
     background-color: $violet;
+    a {
+      border-bottom: lighten($violet, 5%) 1px solid;
+      border-left: lighten($violet, 5%) 1px solid;
+      border-top: none;
+    }
     > li {
       background-color: transparent;
       border-bottom: lighten($violet, 5%) 1px solid;

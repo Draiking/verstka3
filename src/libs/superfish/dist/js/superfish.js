@@ -261,7 +261,7 @@
 		animationOut: {opacity: 'hide'},
 		speed: 'normal',
 		speedOut: 'fast',
-		cssArrows: true,
+		cssArrows: false,
 		disableHI: false,
 		onInit: $.noop,
 		onBeforeShow: $.noop,
