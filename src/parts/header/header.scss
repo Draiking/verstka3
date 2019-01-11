@@ -14,7 +14,7 @@
   }
 
   .sf-menu {
-    margin: auto;
+    margin: 0 auto -5px;
     font-family: "RobotoCondensedRegual", sans-serif;
     font-size: 15px;
     background-color: $violet;
@@ -29,7 +29,7 @@
       >a {
         color: $white;
         border: none;
-        padding: 12px 28px 12px;
+        padding: 25px 28px 25px;
         text-decoration: none;
       }
       &:hover {
@@ -43,8 +43,12 @@
     ul {
       li{
         background-color: $violet;
-        a{
-          padding: 10px;
+        &:hover {
+          >a {
+            color: $accent-yellow;
+          }
+        }
+        a {
           color: $white;
           &:hover {
             color: $accent-yellow;
