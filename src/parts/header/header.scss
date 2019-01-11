@@ -1,0 +1,16 @@
+@import "../../style/variables";
+@import "../../style/common";
+.main-head {
+  .top-line{
+    background-color: $violet;
+    text-align: center;
+    a{
+      color: $white;
+    }
+    ul, li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
