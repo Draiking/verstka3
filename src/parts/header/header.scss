@@ -1,5 +1,3 @@
-@import "../../style/variables";
-@import "../../style/common";
 .main-head {
   .top-line{
     background-color: $violet;
@@ -11,6 +9,14 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
+      float: none;
     }
   }
+
+  .sf-menu {
+    margin: auto;
+
+  }
+
+
 }
