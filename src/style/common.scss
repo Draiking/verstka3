@@ -1,11 +1,11 @@
 @import "../libs/bourbon/app/assets/stylesheets/bourbon";
-@import "var";
+@import "variables";
 
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
-  line-height: 1.6;
+  line-height: 1.5;
   font-family: "RobotoRegular", sans-serif;
   overflow-x: hidden;
 }
@@ -17,3 +17,16 @@ body {
 .d-block {
   display: block;
 }
+
+stong, b {
+  font-family: "RobotoBold", sans-serif;
+  font-weight: normal;
+}
+
+
+h1 , h2 , h3 , h4 , h5 , h6, .button {
+  font-family: "RobotoCondensedBold";
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
