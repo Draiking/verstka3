@@ -15,9 +15,51 @@
 
   .sf-menu {
     margin: auto;
-    li {
-      background-color: none;
+    font-family: "RobotoCondensedRegual", sans-serif;
+    font-size: 15px;
+    background-color: $violet;
+    > li {
+      background-color: transparent;
+      border-bottom: lighten($violet, 5%) 1px solid;
+      >a {
+        color: $white;
+        border: none;
+        padding: 12px 28px 12px;
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: darken($violet, 3%);
+        >a {
+          color: $accent-yellow;
+          outline: none;
+        }
+      }
     }
+    ul {
+      li{
+        background-color: $violet;
+        a{
+          padding: 10px;
+          color: $white;
+          &:hover {
+            color: $accent-yellow;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+/* для прозрачности кода */
+  .sf-menu ul > li a {
+    text-align: left;
+    padding: 12px 25px 12px;
+    color: $white;
+  }
+/* ************* */
+  .fa {
+    font-size: 11px;
+    margin-left: 2px;
   }
 
 
