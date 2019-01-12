@@ -19,6 +19,10 @@
     font-family: "RobotoCondensedRegual", sans-serif;
     font-size: 15px;
     background-color: $violet;
+    .fa {
+      font-size: 11px;
+      margin-left: 2px;
+    }
     a {
       border-bottom: lighten($violet, 5%) 1px solid;
       border-left: lighten($violet, 5%) 1px solid;
@@ -66,10 +70,7 @@
     color: $white;
   }
 /* ************* */
-  .fa {
-    font-size: 11px;
-    margin-left: 2px;
-  }
+
 // top-panel
   .top-panel {
     background-color: rgba(lighten($violet, 2%), .8);
@@ -143,5 +144,24 @@
   .sf-menu ul {
     z-index: 9999;
   }
+
+  .top-phone {
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: "RobotoCondensedRegual", sans-serif;
+    margin-top: -3px;
+    span {
+      font-size: 14px;
+      opacity: .3;
+    }
+    .fa {
+      position: relative;
+      font-size: 14px;
+      right: 3px;
+      opacity: .3;
+    }
+  }
+
+
 
 }
