@@ -1,5 +1,7 @@
 $(function() {
-    $(".top-line .sf-menu").superfish();
+    $(".top-line .sf-menu").superfish({
+        hoverClass: 'no-class'
+    });
 
 
 	//SVG Fallback
