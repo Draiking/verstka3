@@ -110,7 +110,20 @@
         list-style-type: none;
       }
       li {
-        max-width: 40%;
+        max-width: 48%;
+        opacity: .35;
+        font-size: 13px;
+        padding: 10px 10px 0 25px;
+        position: relative;
+        &:only-child{
+          max-width: 100%;
+        }
+        &::before {
+          position: absolute;
+          left: 0;
+          top: 14px;
+
+        }
       }
     }
   }
@@ -125,6 +138,8 @@
       max-width: 100%;
     }
   }
+
+
 
 
 }

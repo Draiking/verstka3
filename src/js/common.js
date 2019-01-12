@@ -1,5 +1,5 @@
 $(function() {
-    $(".top-line .sf-menu").superfish({
+    $(".top-line .sf-menu .ul").superfish({
         hoverClass: 'no-class'
     });
 
