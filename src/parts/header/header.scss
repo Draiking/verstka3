@@ -162,6 +162,45 @@
     }
   }
 
+  .top-email {
+    font-size: 14px;
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+    span {
+      opacity: .3;
+    }
+    .fa{
+      position: relative;
+      font-size: 14px;
+      right: 3px;
+      opacity: .3;
+    }
+  }
 
+  .top-button{
+    margin-top: 19px;
+  }
+
+  .button-small {
+    font-size: 14px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: darken($accent-yellow, 10%);
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+    &:hover,&:focus {
+      text-decoration: none;
+      color: $black;
+    }
+  }
 
 }

@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+.button {
+  color: $black;
+  background-color: $accent-yellow;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 6px 22px;
+}
+
 .hidden {
   display: none;
 }
@@ -20,6 +28,14 @@ body {
 
 .i-block {
   display: inline-block;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 stong, b {
