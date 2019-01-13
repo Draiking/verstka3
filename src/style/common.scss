@@ -16,6 +16,13 @@ body {
   border-radius: 2px;
   font-size: 15px;
   padding: 6px 22px;
+  transition: background-color .25s ease;
+  &:hover {
+    background-color: lighten($accent-yellow, 12%);
+  }
+  &:active {
+    background-color: darken($accent-yellow, 10%);
+  }
 }
 
 .hidden {
