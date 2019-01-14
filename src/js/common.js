@@ -12,7 +12,8 @@ $(function() {
         items: 1,
         itemElement: "slide-wrap",
         nav: true,
-        navText: ""
+        navText: "",
+        loop : true
     });
         $(".next").click(function () {
             owl.trigger('next.owl.carousel');
