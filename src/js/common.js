@@ -1,12 +1,17 @@
 $(function() {
 
-	console.log('123456');
 
     $(".sf-menu").superfish({
         cssArrows: false,
         hoverClass: 'no-class',
 		delay: 200
      });
+
+    $(".slider").owlCarousel({
+        itemElement: "slide-wrap"
+    });
+
+
 
 
 	//SVG Fallback

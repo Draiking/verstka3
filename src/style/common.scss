@@ -15,7 +15,7 @@ body {
   background-color: $accent-yellow;
   border-radius: 2px;
   font-size: 15px;
-  padding: 6px 22px;
+  padding: 10px 22px;
   transition: background-color .25s ease;
   &:hover {
     background-color: lighten($accent-yellow, 12%);
