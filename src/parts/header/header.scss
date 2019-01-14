@@ -189,6 +189,8 @@
   .button-small {
     font-size: 14px;
     position: relative;
+    position: absolute;
+    right: 0;
     &::after {
       position: absolute;
       content: '';
@@ -212,14 +214,12 @@
     width: 100%;
   }
 
-
-
   .slider-nav-container {
     position: relative;
   }
 
   .slider-nav {
-    position: absolute;
+    position: relative;
     color: $white;
     width: 100%;
     z-index: 1010;
@@ -230,7 +230,7 @@
       top: 180px;
       &:first-child{
         position: absolute;
-        left: -100px;
+        left: 0;
       }
       &:last-child {
         right: 0;
@@ -274,6 +274,12 @@
     }
   }
 
+  .slide-img-wrap {
+    img {
+      max-width: 100%;
+    }
+  }
+
   .owl-dots {
     position: absolute;
     bottom: 0;
@@ -296,6 +302,41 @@
     }
   }
 
-
-
 }
+@media only screen and (max-width : 1200px) {
+  .main-head {
+    .top-phone {
+      white-space: normal;
+    }
+
+    .top-email {
+      a{
+        font-size: 12px;
+      }
+    }
+
+    .slide {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+
+  }
+}
+@media only screen and (max-width : 992px) {
+  .main-head {
+    .top-panel-box{
+
+    }
+
+    .logo {
+      img {
+        max-width: none;
+      }
+    }
+  }
+}
+
