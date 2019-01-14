@@ -207,19 +207,41 @@
   }
 
   .slider {
-    position: relative;
+    position: absolute;
     top: 0;
     width: 100%;
   }
 
-  .slider-wrap {
-    float: left;
+  .slider-nav-container {
+    position: relative;
   }
+
+  .slider-nav {
+    position: absolute;
+    color: $white;
+    width: 100%;
+    z-index: 1010;
+    font-size: 36px;
+    div {
+      cursor: pointer;
+      position: absolute;
+      top: 180px;
+      &:first-child{
+        position: absolute;
+        left: -100px;
+      }
+      &:last-child {
+        right: 0;
+      }
+    }
+  }
+
 
   .slide {
     position: relative;
     color: $white;
     width: 100%;
+    padding-top: 273px;
   }
 
   .slide-bg {
@@ -248,5 +270,7 @@
       color: $accent-yellow;
     }
   }
+
+
 
 }

@@ -7,10 +7,19 @@ $(function() {
 		delay: 200
      });
 
-    $(".slider").owlCarousel({
-        itemElement: "slide-wrap"
+    var owl =$(".slider");
+    owl.owlCarousel({
+        items: 1,
+        itemElement: "slide-wrap",
+        nav: true,
+        navText: ""
     });
-
+        $(".next").click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $(".prev").click(function () {
+            owl.trigger('prev.owl.carousel')
+        })
 
 
 
