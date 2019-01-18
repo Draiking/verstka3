@@ -1,12 +1,12 @@
 $(function() {
 
-
+    //menu
     $(".sf-menu").superfish({
         cssArrows: false,
         hoverClass: 'no-class',
 		delay: 200
      });
-
+    //slid
     var owl =$(".slider");
     owl.owlCarousel({
         items: 1,
@@ -21,6 +21,22 @@ $(function() {
         $(".prev").click(function () {
             owl.trigger('prev.owl.carousel')
         })
+    // mob menu
+
+    $("#my-menu").mmenu({
+        navbar: {
+            extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
+            title: "Меню"
+        }
+    });
+    $(".mobile-mnu").click(function () {
+        var mmAPI = $("#my-menu").data("mmenu");
+        mmAPI.open();
+        var thiss = $(this).find(".toggle-mnu");
+        thiss.toggleClass("on");
+        $(".main-mnu").slideToggle();
+        return false;
+    });
 
 
 
