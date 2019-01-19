@@ -23,35 +23,43 @@ $(function() {
     });
     // mob menu
 
-    $(".sf-menu").after("<div id='my-menu'>");
-    $(".sf-menu").clone().appendTo("#my-menu");
-    $("#my-menu").find("*").attr("style", "");
-    $("#my-menu").find("ul").removeClass("sf-menu");
-    $("#my-menu").mmenu({
-        extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
-        navbar: {
-            title: "Меню"
-        }
-    });
+    $(".toggle-mnu").click(function () {
+        $("#my-menu").toggleClass('open');
+    })
 
-    var api = $("#my-menu").data("mmenu");
-    api.bind("closed", function () {
-        $(".toggle-mnu").removeClass("on");
-    });
+    $("#close-menu").click(function () {
+        $("#my-menu").removeClass('open');
+    })
 
-    $(".mobile-mnu").click(function () {
-        var mmAPI = $("#my-menu").data("mmenu");
-        mmAPI.open();
-        var thiss = $(this).find(".toggle-mnu");
-        thiss.toggleClass("on");
-        $(".main-mnu").slideToggle();
-        return false;
-    });
-    var API = $("#my-menu").data( "mmenu" );
-
-    $(".toggle-mnu").click(function() {
-        API.close();
-    });
+    // $(".sf-menu").after("<div id='my-menu'>");
+    // $(".sf-menu").clone().appendTo("#my-menu");
+    // $("#my-menu").find("*").attr("style", "");
+    // $("#my-menu").find("ul").removeClass("sf-menu");
+    // $("#my-menu").mmenu({
+    //     extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
+    //     navbar: {
+    //         title: "Меню"
+    //     }
+    // });
+    //
+    // var api = $("#my-menu").data("mmenu");
+    // api.bind("closed", function () {
+    //     $(".toggle-mnu").removeClass("on");
+    // });
+    //
+    // $(".mobile-mnu").click(function () {
+    //     var mmAPI = $("#my-menu").data("mmenu");
+    //     mmAPI.open();
+    //     var thiss = $(this).find(".toggle-mnu");
+    //     thiss.toggleClass("on");
+    //     $(".main-mnu").slideToggle();
+    //     return false;
+    // });
+    // var API = $("#my-menu").data( "mmenu" );
+    //
+    // $(".toggle-mnu").click(function() {
+    //     API.close();
+    // });
 
 
 
