@@ -4,31 +4,41 @@ $(function() {
     $(".sf-menu").superfish({
         cssArrows: false,
         hoverClass: 'no-class',
-		delay: 200
-     });
+        delay: 200
+    });
     //slid
-    var owl =$(".slider");
+    var owl = $(".slider");
     owl.owlCarousel({
         items: 1,
         itemElement: "slide-wrap",
         nav: true,
         navText: "",
-        loop : true
+        loop: true
     });
-        $(".next").click(function () {
-            owl.trigger('next.owl.carousel');
-        })
-        $(".prev").click(function () {
-            owl.trigger('prev.owl.carousel')
-        })
+    $(".next").click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+    $(".prev").click(function () {
+        owl.trigger('prev.owl.carousel')
+    });
     // mob menu
 
+    $(".sf-menu").after("<div id='my-menu'>");
+    $(".sf-menu").clone().appendTo("#my-menu");
+    $("#my-menu").find("*").attr("style", "");
+    $("#my-menu").find("ul").removeClass("sf-menu");
     $("#my-menu").mmenu({
+        extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
         navbar: {
-            extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
             title: "Меню"
         }
     });
+
+    var api = $("#my-menu").data("mmenu");
+    api.bind("closed", function () {
+        $(".toggle-mnu").removeClass("on");
+    });
+
     $(".mobile-mnu").click(function () {
         var mmAPI = $("#my-menu").data("mmenu");
         mmAPI.open();
@@ -37,6 +47,12 @@ $(function() {
         $(".main-mnu").slideToggle();
         return false;
     });
+    var API = $("#my-menu").data( "mmenu" );
+
+    $(".toggle-mnu").click(function() {
+        API.close();
+    });
+
 
 
 

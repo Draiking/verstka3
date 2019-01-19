@@ -51,7 +51,10 @@ stong, b {
 }
 
 .mm-menu {
-  z-index: 1010;
+    z-index: 1010;
+  .fa {
+    display: none;
+  }
 }
 
 h1 , h2 , h3 , h4 , h5 , h6, .button {

@@ -1,11 +1,18 @@
 .main-head {
-  .top-line{
+  filter: blur(0px);
+  transform: none;
+  .top-line {
     background-color: $violet;
     text-align: center;
     border-bottom: lighten($violet, 7%) 1px solid;
-    position: relative;
-    z-index: 1050;
-    a{
+    position: fixed;
+    z-index: 1010;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+
+    a {
       color: $white;
     }
     ul, li {
@@ -33,7 +40,7 @@
     > li {
       background-color: transparent;
       border-bottom: lighten($violet, 5%) 1px solid;
-      >a {
+      > a {
         color: $white;
         border: none;
         padding: 25px 28px 25px;
@@ -41,21 +48,22 @@
       }
       &:hover {
         background-color: darken($violet, 3%);
-        >a {
+        > a {
           color: $accent-yellow;
           outline: none;
         }
       }
     }
     ul {
-      li{
+      li {
         background-color: $violet;
         &:hover {
-          >a {
+          > a {
             color: $accent-yellow;
           }
         }
-        a {color: $white;
+        a {
+          color: $white;
           &:hover {
             color: $accent-yellow;
             text-decoration: none;
@@ -65,22 +73,22 @@
     }
   }
 
-/* для прозрачности кода */
+  /* для прозрачности кода */
   .sf-menu ul > li a {
     text-align: left;
     padding: 12px 25px 12px;
     color: $white;
   }
-/* ************* */
+  /* ************* */
 
-// top-panel
+  // top-panel
   .top-panel {
     background-color: rgba(lighten($violet, 2%), .8);
     color: $white;
     padding: 50px 0;
     position: relative;
     border-bottom: rgba($white, .03) 10px solid;
-    &::before{
+    &::before {
       content: '';
       position: absolute;
       top: 0;
@@ -119,7 +127,7 @@
         font-size: 13px;
         padding: 10px 10px 0 25px;
         position: relative;
-        &:only-child{
+        &:only-child {
           max-width: 100%;
         }
         &::before {
@@ -142,7 +150,6 @@
       max-width: 100%;
     }
   }
-
 
   .sf-menu ul {
     z-index: 9999;
@@ -174,7 +181,7 @@
     span {
       opacity: .3;
     }
-    .fa{
+    .fa {
       position: relative;
       font-size: 14px;
       right: 3px;
@@ -182,7 +189,7 @@
     }
   }
 
-  .top-button{
+  .top-button {
     margin-top: 19px;
   }
 
@@ -201,7 +208,7 @@
       border-bottom-right-radius: 2px;
       border-bottom-left-radius: 2px;
     }
-    &:hover,&:focus {
+    &:hover, &:focus {
       text-decoration: none;
       color: $black;
     }
@@ -227,7 +234,7 @@
       cursor: pointer;
       position: absolute;
       top: 180px;
-      &:first-child{
+      &:first-child {
         left: 0;
       }
       &:last-child {
@@ -235,7 +242,6 @@
       }
     }
   }
-
 
   .slide {
     position: relative;
@@ -305,7 +311,7 @@
     position: relative;
     padding-top: 15px;
     cursor: pointer;
-    b{
+    b {
       text-align: center;
       position: relative;
       bottom: 7px;
@@ -352,14 +358,15 @@
   }
 
 }
-@media only screen and (max-width : 1200px) {
+
+@media only screen and (max-width: 1200px) {
   .main-head {
     .top-phone {
       white-space: normal;
     }
 
     .top-email {
-      a{
+      a {
         font-size: 12px;
       }
     }
@@ -375,9 +382,10 @@
 
   }
 }
-@media only screen and (max-width : 992px) {
+
+@media only screen and (max-width: 992px) {
   .main-head {
-    .top-panel{
+    .top-panel {
       padding: 30px 0;
     }
 
@@ -390,26 +398,32 @@
     .top-button {
       margin-top: 5px;
     }
+
+    .sf-menu {
+      display: none;
+    }
   }
 }
-@media only screen and (max-width : 768px) {
+
+@media only screen and (max-width: 768px) {
   .main-head {
-    .top-button{
+    .top-button {
       right: 14px;
     }
 
-    .slide{
+    .slide {
       p {
         padding-right: 30px;
       }
     }
   }
 }
-@media only screen and (max-width : 480px) {
+
+@media only screen and (max-width: 480px) {
   .main-head {
     .slide {
       h2 {
-        font-size: 27px!important;
+        font-size: 27px !important;
       }
     }
 
