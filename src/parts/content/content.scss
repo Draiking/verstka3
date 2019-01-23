@@ -1,4 +1,45 @@
 .sect-teaser {
   background-color: $violet;
+  color: $white;
+  padding: 28px 0px;
+
+  .teaser-item {
+    display: table-row;
+  }
+
+  .teaser-count {
+    display: table-cell;
+    vertical-align: middle;
+    i {
+      font-size: 48px;
+      color: lighten($violet, 15%);
+    }
+    &-wrap {
+      width: 43px;
+      height: 43px;
+      position: relative;
+    }
+  }
+
+  .teaser-text {
+    display: table-cell;
+    font-family: "RobotoCondensedLight", sans-serif;
+    line-height: 20px;
+    padding-left: 10px;
+    opacity: .28;
+    position: absolute;
+    top: 5px;
+  }
+
+  .teaser-number {
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+    color: $accent-yellow;
+    font-size: 20px;
+    font-family: "RobotoCondensedBold", sans-serif;
+  }
+
 
 }
