@@ -26,15 +26,15 @@ var path = {
     },
     src: {
         html: 'src/**/*.html',
-        js: 'src/js/main.js',
+        js: 'src/js/common.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
-        html: 'src/**/*.html',
+        html: 'src/**/**/*.html',
         js: 'src/**/*.js',
-        style: 'src/**/*.scss',
+        style: 'src/**/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
