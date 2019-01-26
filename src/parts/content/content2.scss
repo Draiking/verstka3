@@ -20,6 +20,12 @@
         }
       }
     }
+  }
+
+  .service-item-image {
+    min-height: 190px;
+    background-size: cover;
+    position: relative;
     .fa{
       font-size: 30px;
       color: $white;
@@ -31,12 +37,6 @@
       opacity: 0;
       transition: all .5s ease;
     }
-  }
-
-  .service-item-image {
-    min-height: 190px;
-    background-size: cover;
-    position: relative;
     &::before {
       position: absolute;
       content: '';
@@ -50,9 +50,7 @@
     }
   }
 
-  .services-stars {
 
-  }
 
 
 
