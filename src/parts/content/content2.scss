@@ -3,12 +3,33 @@
 
   .services-item {
     border: 5px lighten($violet, 5%) solid;
+    transition: border-color .5s ease;
+    text-align: center;
+    h4{
+      font-size: 18px;
+      padding-top: 20px;
+    }
     &:hover {
+      border-color: $accent-yellow;
+      .fa {
+        opacity: 1;
+      }
       .service-item-image {
         &::before {
           opacity: .7;
         }
       }
+    }
+    .fa{
+      font-size: 30px;
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -10px;
+      opacity: 0;
+      transition: all .5s ease;
     }
   }
 
@@ -29,7 +50,9 @@
     }
   }
 
+  .services-stars {
 
+  }
 
 
 
