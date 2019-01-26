@@ -1,7 +1,40 @@
 .sect-services {
   background-color: $white-gray;
 
-  .service-item-image {
-
+  .services-item {
+    border: 5px lighten($violet, 5%) solid;
+    &:hover {
+      .service-item-image {
+        &::before {
+          opacity: .7;
+        }
+      }
+    }
   }
+
+  .service-item-image {
+    min-height: 190px;
+    background-size: cover;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $violet;
+      opacity: 0;
+      transition: all .5s ease;
+    }
+  }
+
+
+
+
+
+
+
+
+
 }
