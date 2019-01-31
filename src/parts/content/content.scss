@@ -41,4 +41,15 @@
     font-family: "RobotoCondensedBold", sans-serif;
   }
 }
+@media only screen and (max-width : 768px) {
+  .sect-teaser {
+    .teaser-count-wrap {
+      margin-left: 10px;
+    }
+
+    .teaser-text {
+      margin: 0 10px;
+    }
+  }
+}
 @import "content2";
