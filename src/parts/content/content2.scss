@@ -5,9 +5,11 @@
     border: 5px lighten($violet, 5%) solid;
     transition: border-color .5s ease;
     text-align: center;
+    padding-bottom: 35px;
     h4{
       font-size: 18px;
       padding-top: 20px;
+      margin-bottom: 15px;
     }
     &:hover {
       border-color: $accent-yellow;
@@ -17,6 +19,16 @@
       .service-item-image {
         &::before {
           opacity: .7;
+        }
+      }
+      .services-item-stars {
+        color: $accent-yellow;
+        transition: all .5s ease;
+      }
+      .service-item-price {
+        .fa {
+          color: $accent-yellow;
+          transition: all .5s ease;
         }
       }
     }
@@ -50,9 +62,23 @@
     }
   }
 
+  .services-item-stars {
+    color: $gray;
+    font-size: 11px;
+  }
 
-
-
+  .service-item-price {
+    font-size: 17px;
+    font-family: "RobotoBold", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    span {
+      font-size: 31px;
+    }
+    .fa {
+      font-size: 18px;
+    }
+  }
 
 
 
