@@ -461,3 +461,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 342px) {
+  .main-head{
+    .owl-dots{
+      bottom: -35px;
+    }
+  }
+}

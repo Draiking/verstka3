@@ -1,18 +1,23 @@
 .sect-services {
   background-color: $white-gray;
+  z-index: 1010;
 
   .services-item {
     border: 5px lighten($violet, 5%) solid;
-    transition: border-color .5s ease;
+    transition: transform .5s ease;
     text-align: center;
     padding-bottom: 35px;
+    background-color: $white;
+    z-index: 1010;
     h4{
       font-size: 18px;
       padding-top: 20px;
       margin-bottom: 15px;
     }
     &:hover {
+      transform: scale(1.05);
       border-color: $accent-yellow;
+      box-shadow: rgba(0,0,0,.35) 0 0 32px;
       .fa {
         opacity: 1;
       }
